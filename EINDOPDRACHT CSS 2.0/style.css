@@ -1,0 +1,308 @@
+@font-face {
+    font-family: BaiJamjuree;
+    src: url(BaiJamjuree-Regular.ttf);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+body * {
+    --primairy-text-color: hsl(210, 10%, 33%);
+    --secondairy-text-color: hsl(201, 11%, 66%);
+    --button-color-iOS: hsl(171, 66%, 44%);
+    --button-color-Mac:hsl(233, 100%, 69%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: "BaiJamjuree", sans-serif;
+    color: var(--primairy-text-color);
+}
+
+header {
+    background-image: url("/images/bg-header-mobile.png");
+    background-size:100vw;
+    padding: 20%;
+    margin-bottom: 0rem;
+}
+
+main {
+    margin-left: 5.5vw;
+    margin-right: 5.5vw;
+}
+
+
+p {
+color: var(--secondairy-text-color);
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+h3 {    
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+img.img-mac {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+img.img-mobile {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.downloadbuttons {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+button {
+    box-sizing: border-box;
+    border-radius: 150px;
+    text-align: center;
+    height: 2rem;
+    width: 80vw;
+    max-width: 450px;
+    margin: 1ch;
+    color: white;
+}
+
+button.iOS {
+    border: 1px solid var(--button-color-iOS);
+    background-color: var(--button-color-iOS);
+}
+
+button.Mac {
+    border: 1px solid var(--button-color-Mac);
+    background-color: var(--button-color-Mac);
+}
+
+.feature img {
+    margin: 2rem;
+}
+
+.parters {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.parters img{
+    padding: 2rem;
+}
+
+footer {
+    background-color:  hsl(201, 11%, 90%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+
+}
+
+footer div{
+    padding: 2rem;
+}
+
+footer .clipboard-logo img {
+width: 50%;
+
+}
+
+footer li{
+    padding: 1rem;
+
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.attribution {
+    display:flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-evenly;
+}
+
+.socials img {margin: 1ch;}
+
+
+@media (min-width: 700px) {
+  header {
+    background-image: url("/images/bg-header-mobile.png");
+    background-size:100vw;
+    padding: 5%;
+    margin-bottom: 2rem;
+    }
+
+    .downloadbuttons {
+        flex-direction: row;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    button {
+        box-sizing: border-box;
+        border-radius: 150px;
+        text-align: center;
+        height: 2rem;
+        width: 80vw;
+        max-width: 200px;
+        margin: 1ch;
+        color: white;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0rem 10vw 0rem 10vw;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    footer li {
+        margin: 2ch;
+    }
+
+    .socials {margin-left: 10vw;}
+}
+
+
+@media (min-width: 1080px) {
+  header {
+    background-image: url("/images/bg-header-desktop.png");
+    background-size:100vw;
+    margin-bottom: 2rem;
+    }
+
+    main {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+
+    .intro {
+        padding: 0rem 10rem 0rem 10rem;
+    }
+
+    .downloadbuttons {
+        flex-direction: row;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    button {
+        box-sizing: border-box;
+        border-radius: 150px;
+        text-align: center;
+        height: 2rem;
+        width: 80vw;
+        max-width: 200px;
+        margin: 1ch;
+        color: white;
+    }
+
+    .uspcontainer {
+        padding: 0rem 10rem 0rem 10rem;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: flex-start;
+    }
+
+    img.img-mac {
+        position: relative;
+        width: 150%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-right: 2ch;
+        left: -50%
+    }
+
+    .usplist *{
+        text-align: left;    
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mobilecontainer {
+        padding: 0rem 10rem 0rem 10rem;
+    }
+
+    img.img-mobile {
+        width: 90%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .featurescontainer {
+        padding: 0rem 5rem 0rem 5rem;
+    }
+
+    .featurelist {
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: space-evenly;
+    }
+
+    .parters {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .parters img{
+        padding: 2rem;
+    }
+    
+    footer * {
+        display: grid;
+    }
+
+    footer {
+        grid-template-columns: repeat(9, 11%);
+    }
+
+    footer .clipboard-logo{
+        grid-column: 2 / 3; 
+    }
+
+
+    footer ul {
+        grid-column: 4 / 7; 
+    }
+
+    .socials {
+        grid-column: 7 / 8; 
+    }
+
+}
+
